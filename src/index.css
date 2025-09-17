@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- GLOBAL STYLES --- */
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 252 100% 99%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 252 100% 97%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 252 100% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 234 89% 74%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 252 100% 92%;
+    --input: 252 100% 92%;
+    --ring: 262 83% 58%;
+
+    /* Custom portfolio colors */
+    --primary-gradient: linear-gradient(135deg, hsl(262 83% 58%), hsl(234 89% 74%));
+    --secondary-gradient: linear-gradient(135deg, hsl(252 100% 97%), hsl(234 89% 93%));
+    --hero-gradient: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(234 89% 74%) 50%, hsl(198 93% 85%) 100%);
+    --data-viz-primary: 262 83% 58%;
+    --data-viz-secondary: 234 89% 74%;
+    --data-viz-tertiary: 198 93% 85%;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+
+    /* Animation variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Shadows */
+    --shadow-glass: 0 8px 32px rgba(31, 38, 135, 0.37);
+    --shadow-card: 0 4px 20px rgba(162, 128, 255, 0.15);
+    --shadow-hover: 0 8px 30px rgba(162, 128, 255, 0.25);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* NEW: Variable for page background, using a very subtle light HSL */
+    --page-background: 180 50% 98%; /* This is the current light green/aqua tint */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* NEW: Apply background in dark mode, typically using the --background variable */
+    --page-background: var(--background);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    /* Set the global background color using your custom variable */
+    /* This rule will apply the background to the entire page */
+    background-color: hsl(var(--page-background));
+
+    /* Ensure no default margin/padding pushes the background away from edges */
+    margin: 0;
+    padding: 0;
+
+    @apply text-foreground; /* Keep the text color defined by your theme */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh; /* Ensures background covers the full viewport height */
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-lg border border-white/20 shadow-lg;
+    background: var(--glass-bg);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .gradient-primary {
+    background: var(--primary-gradient);
+  }
+
+  .gradient-secondary {
+    background: var(--secondary-gradient);
+  }
+
+  .gradient-hero {
+    background: var(--hero-gradient);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
