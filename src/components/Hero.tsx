@@ -8,34 +8,37 @@ const Hero = () => {
     nextSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Function to handle resume download
-  const downloadResume = () => {
-    // Method 1: Direct download using anchor element (Recommended)
-    const link = document.createElement('a');
-    link.href = './files/Resume.pdf'; // Path relative to public folder
-    link.download = 'Madhavi_K.pdf'; //filename for download
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  // Alternative method using fetch (if you need more control)
-  const downloadResumeWithFetch = async () => {
+  // Updated function to force PDF download using fetch
+  const downloadResume = async () => {
     try {
-      const response = await fetch('/resume/Madhavi_Kalmadi_Resume.pdf');
+      // Fetch the PDF as a blob to force download
+      const response = await fetch('/portfolio/Resume.pdf');
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch PDF');
+      }
+      
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
+      
+      // Create download link
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'Madhavi_Kalmadi_Resume.pdf';
+      link.download = 'Madhavi_K_Resume.pdf'; // Custom filename
+      link.target = '_blank';
+      
+      // Trigger download
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      
+      // Clean up the URL object
       window.URL.revokeObjectURL(url);
+      
     } catch (error) {
       console.error('Error downloading resume:', error);
-      alert('Failed to download resume. Please try again.');
+      // Fallback: open in new tab if download fails
+      window.open('/portfolio/Resume.pdf', '_blank');
     }
   };
 

@@ -1,18 +1,14 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-  },
+  base: '/portfolio/', // Replace 'portfolio' with your actual repository name
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
@@ -20,3 +16,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+

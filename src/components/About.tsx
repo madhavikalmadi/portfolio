@@ -1,6 +1,14 @@
 import { GraduationCap, MapPin, Calendar, Award, School, BookOpen } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
+// Correct imports for Vite (without /public/ in the path)
+import courseImg from '/course.jpg';
+import hackImg from '/Hack2skill.png';
+import buildImg from '/buildwithindia.png';
+import internImg from '/internship.jpg';
+import mysticodeImg from '/mysticode.jpg';
+import outskillImg from '/outskill.jpg';
+
 const About = () => {
   return (
     <>
@@ -130,7 +138,7 @@ const About = () => {
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
                 <img 
-                  src="/files/course.jpg" 
+                  src={courseImg} 
                   alt="Data Analyst Program Certificate" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -149,12 +157,12 @@ const About = () => {
               </CardContent>
             </Card>
 
-            {/* Google Cloud Certificate */}
+            {/* Hack2skill Certificate */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-blue-500/10 to-green-500/10">
                 <img 
-                  src="/files/Hack2skill.png" 
-                  alt="Google Cloud Agentic AI Day Certificate" 
+                  src={hackImg} 
+                  alt="Hack2skill Certificate" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -164,10 +172,56 @@ const About = () => {
                   <span className="text-sm text-accent font-medium">Certificate of Participation</span>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">
-                  Google Cloud Agentic AI Day
+                  Hack2skill Certificate
                 </h3>
                 <p className="text-sm text-foreground/70 leading-relaxed">
-                  Participated in Google Cloud's Agentic AI Day, contributing innovative ideas on harnessing Agentic AI to address real-world challenges.
+                  Certificate of participation in technical skills development program focused on enhancing programming and problem-solving abilities.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* mysticode Certificate */}
+            <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-blue-500/10 to-green-500/10">
+                <img 
+                  src={mysticodeImg} 
+                  alt="mysticode Certificate" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Award className="h-5 w-5 text-accent" />
+                  <span className="text-sm text-accent font-medium">Certificate of Participation</span>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">
+                  Mysticode Certificate
+                </h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">  
+                  Participated in a 24-hour application development hackathon as team MYSTICODE, presenting the project "WellSync" at PES University.
+                </p>
+              </CardContent>
+            </Card>
+            
+            {/* Outskill Certificate */}
+            <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-blue-500/10 to-green-500/10">
+                <img 
+                  src={outskillImg} 
+                  alt="Outskill Certificate" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Award className="h-5 w-5 text-accent" />
+                  <span className="text-sm text-accent font-medium">Certificate of Participation</span>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">
+                  Outskill Certificate
+                </h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">
+                  Completed the Generative AI Mastermind program, demonstrating applied proficiency in contemporary generative AI workflows.
                 </p>
               </CardContent>
             </Card>
@@ -176,7 +230,7 @@ const About = () => {
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-orange-500/10 to-red-500/10">
                 <img 
-                  src="/files/buildwithindia.png" 
+                  src={buildImg} 
                   alt="Build With India Hackathon Certificate" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
