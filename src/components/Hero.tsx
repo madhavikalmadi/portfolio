@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            {/* Resume Download Button */}
+            {/* Resume Download – RAW GitHub (FIXED) */}
             <Button
               asChild
               variant="outline"
@@ -33,8 +33,10 @@ const Hero = () => {
               className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 px-8 py-3 text-lg"
             >
               <a
-                href="/portfolio/MadhaviK_Resume.pdf"
+                href="https://raw.githubusercontent.com/madhavikalmadi/portfolio/main/public/MadhaviK_Resume.pdf"
                 download="MadhaviK_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Download Resume
               </a>
