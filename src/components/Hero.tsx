@@ -9,7 +9,6 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Main Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
@@ -25,7 +24,6 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            {/* Resume Download – RAW GitHub (FIXED) */}
             <Button
               asChild
               variant="outline"
@@ -45,7 +43,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div
         onClick={scrollToNext}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer z-20"
