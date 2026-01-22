@@ -7,11 +7,6 @@ const Hero = () => {
     nextSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Simple and reliable resume download
-  const downloadResume = () => {
-    window.location.href = '/portfolio/MadhaviK_Resume.pdf';
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Main Content */}
@@ -30,13 +25,19 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            {/* Resume Download Button */}
             <Button
+              asChild
               variant="outline"
               size="lg"
               className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 px-8 py-3 text-lg"
-              onClick={downloadResume}
             >
-              Download Resume
+              <a
+                href="/portfolio/MadhaviK_Resume.pdf"
+                download="MadhaviK_Resume.pdf"
+              >
+                Download Resume
+              </a>
             </Button>
           </div>
         </div>
