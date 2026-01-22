@@ -24,7 +24,7 @@ const Hero = () => {
       // Create download link
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'Madhavi_K_Resume.pdf'; // Custom filename
+      link.download = 'MadhaviK_Resume.pdf'; // Custom filename
       link.target = '_blank';
       
       // Trigger download
