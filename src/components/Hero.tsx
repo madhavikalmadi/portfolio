@@ -12,7 +12,7 @@ const Hero = () => {
   const downloadResume = async () => {
     try {
       // Fetch the PDF as a blob to force download
-      const response = await fetch('/portfolio/Resume.pdf');
+      const response = await fetch('/portfolio/MadhaviK_Resume.pdf');
       
       if (!response.ok) {
         throw new Error('Failed to fetch PDF');
