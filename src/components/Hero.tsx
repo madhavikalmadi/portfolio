@@ -28,14 +28,9 @@ const Hero = () => {
               asChild
               variant="outline"
               size="lg"
-              className="border-primary text-primary hover:bg-primary/10 transition-all duration-300 px-8 py-3 text-lg"
+              className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg"
             >
-              <a
-                href="https://raw.githubusercontent.com/madhavikalmadi/portfolio/main/public/MadhaviK_Resume.pdf"
-                download="MadhaviK_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="MadhaviK_Resume.pdf" download>
                 Download Resume
               </a>
             </Button>
