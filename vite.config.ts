@@ -3,9 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/portfolio/', // Replace 'portfolio' with your actual repository name
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -16,4 +14,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-
