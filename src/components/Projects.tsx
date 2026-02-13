@@ -32,7 +32,7 @@ const Projects = () => {
       title: 'Next-Day IT Forecaster',
       description:
         'Built a platform analyzing 5 IT companies (TCS, Infosys, Wipro, HCL, L&T) using 5 years of Yahoo Finance data. Created dual models: Logistic Regression for investment safety and Linear Regression for next-day forecasts. Designed Flask dashboard with real-time visualizations and automated predictions.',
-      category: 'machine-learning',
+      category: 'analytics',
       image: '/api/placeholder/400/250',
       technologies: ['Python', 'Flask', 'Pandas', 'Scikit-learn', 'Yahoo Finance API'],
       features: [
