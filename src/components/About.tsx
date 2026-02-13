@@ -26,10 +26,10 @@ const About = () => {
             <div className="space-y-6">
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-foreground/80 leading-relaxed">
-                  I am a passionate MCA student with hands-on experience in data science and machine learning. 
-                  I enjoy turning complex data into actionable insights through predictive modeling and analytics. 
-                  I have worked with Python, machine learning frameworks, and data visualization tools to solve 
-                  real-world problems. I am enthusiastic about leveraging my skills to contribute to innovative 
+                  I am a passionate MCA student with hands-on experience in data science and machine learning.
+                  I enjoy turning complex data into actionable insights through predictive modeling and analytics.
+                  I have worked with Python, machine learning frameworks, and data visualization tools to solve
+                  real-world problems. I am enthusiastic about leveraging my skills to contribute to innovative
                   data-driven solutions and keen to keep learning in this exciting field.
                 </p>
               </div>
@@ -50,7 +50,7 @@ const About = () => {
                       Master of Computer Applications (MCA)
                     </h3>
                     <p className="text-sm text-foreground/60 mb-3">
-                       PES University, Bengaluru
+                      PES University, Bengaluru
                     </p>
                     <p className="text-foreground/70 mb-2">Currently Pursuing • 2024 - 2026</p>
                   </div>
@@ -70,7 +70,7 @@ const About = () => {
                       Bachelor of Computer Applications (BCA)
                     </h3>
                     <p className="text-sm text-foreground/60 mb-3">
-                       Christ Academy Institute for Advanced Studies, Bengaluru
+                      Christ Academy Institute for Advanced Studies, Bengaluru
                     </p>
                     <p className="text-foreground/70 mb-2">Completed • 2021 - 2024</p>
                   </div>
@@ -91,7 +91,7 @@ const About = () => {
                     </h3>
                     <p className="text-sm text-foreground/60 mb-3">
                       Pupil Tree College, Bellary
-                     </p>
+                    </p>
                     <p className="text-foreground/70 mb-2">Completed • 2019 - 2021</p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const About = () => {
                       Secondary School Education (10th Grade)
                     </h3>
                     <p className="text-sm text-foreground/60 mb-3">
-                       St Dominic's School, Attibele
+                      St Dominic's School, Bengaluru
                     </p>
                     <p className="text-foreground/70 mb-2">Completed • 2018 - 2019</p>
                   </div>
@@ -137,9 +137,9 @@ const About = () => {
             {/* Data Analyst Program */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
-                <img 
-                  src={courseImg} 
-                  alt="Data Analyst Program Certificate" 
+                <img
+                  src={courseImg}
+                  alt="Data Analyst Program Certificate"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -160,9 +160,9 @@ const About = () => {
             {/* Hack2skill Certificate */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-blue-500/10 to-green-500/10">
-                <img 
-                  src={hackImg} 
-                  alt="Hack2skill Certificate" 
+                <img
+                  src={hackImg}
+                  alt="Hack2skill Certificate"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -183,9 +183,9 @@ const About = () => {
             {/* mysticode Certificate */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-blue-500/10 to-green-500/10">
-                <img 
-                  src={mysticodeImg} 
-                  alt="mysticode Certificate" 
+                <img
+                  src={mysticodeImg}
+                  alt="mysticode Certificate"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -197,18 +197,18 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-3">
                   Mysticode Certificate
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed">  
+                <p className="text-sm text-foreground/70 leading-relaxed">
                   Participated in a 24-hour application development hackathon as team MYSTICODE, presenting the project "WellSync" at PES University.
                 </p>
               </CardContent>
             </Card>
-            
+
             {/* Outskill Certificate */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-blue-500/10 to-green-500/10">
-                <img 
-                  src={outskillImg} 
-                  alt="Outskill Certificate" 
+                <img
+                  src={outskillImg}
+                  alt="Outskill Certificate"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -229,9 +229,9 @@ const About = () => {
             {/* Build With India Hackathon */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300 overflow-hidden">
               <div className="aspect-[4/3] relative overflow-hidden bg-gradient-to-br from-orange-500/10 to-red-500/10">
-                <img 
-                  src={buildImg} 
-                  alt="Build With India Hackathon Certificate" 
+                <img
+                  src={buildImg}
+                  alt="Build With India Hackathon Certificate"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>

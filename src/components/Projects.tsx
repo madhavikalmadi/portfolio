@@ -11,6 +11,41 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'Smart Investor Assistant',
+      description:
+        'A comprehensive, performance-driven stock analysis platform built with Streamlit. Analyzes the Indian Stock Market (NSE/BSE) using academic-grade metrics and real-time data.',
+      category: 'analytics',
+      image: '/api/placeholder/400/250',
+      technologies: ['Python', 'Streamlit', 'yfinance', 'MongoDB', 'Pandas', 'NumPy'],
+      features: [
+        'Real-time market monitoring with personalized dashboard and watchlist analysis feed',
+        'Sector & Thematic Advisor for comparing market categories (Banking, IT, etc.)',
+        'Market Leaderboard with 10-year risk-adjusted scoring (CAGR, Sharpe, Sortino)',
+        'Dual-mode Company Advisor for single stock deep-dives and head-to-head comparisons',
+      ],
+      github: 'https://github.com/madhavikalmadi/Stock-Analysis-and-Prediction',
+      impact: 'Financial Analytics',
+      icon: TrendingUp,
+    },
+    {
+      id: 2,
+      title: 'Next-Day IT Forecaster',
+      description:
+        'Built a platform analyzing 5 IT companies (TCS, Infosys, Wipro, HCL, L&T) using 5 years of Yahoo Finance data. Created dual models: Logistic Regression for investment safety and Linear Regression for next-day forecasts. Designed Flask dashboard with real-time visualizations and automated predictions.',
+      category: 'machine-learning',
+      image: '/api/placeholder/400/250',
+      technologies: ['Python', 'Flask', 'Pandas', 'Scikit-learn', 'Yahoo Finance API'],
+      features: [
+        'Dual-model architecture: Logistic Regression for investment safety scoring',
+        'Linear Regression model for next-day stock price forecasting',
+        'Flask web dashboard with real-time visualizations and automated daily predictions',
+      ],
+      github: 'https://github.com/madhavikalmadi/Next-Day-IT-Forecaster',
+      impact: 'Financial Analysis',
+      icon: TrendingUp,
+    },
+    {
+      id: 3,
       title: 'Laptop Price Prediction',
       description:
         'Built an end-to-end data preprocessing and modeling pipeline using Pandas, NumPy, and Scikit-learn. Implemented and compared machine learning models such as Linear Regression and Gradient Boosting to analyze outcomes. Applied data visualization and evaluation metrics to assess model performance effectively.',
@@ -27,24 +62,7 @@ const Projects = () => {
       icon: Brain,
     },
     {
-      id: 2,
-      title: 'Stock Investment Analysis & Prediction',
-      description:
-        'Built a platform analyzing 5 IT companies (TCS, Infosys, Wipro, HCL, L&T) using 5 years of Yahoo Finance data. Created dual models: Logistic Regression for investment safety and Linear Regression for next-day forecasts. Designed Flask dashboard with real-time visualizations and automated predictions.',
-      category: 'machine-learning',
-      image: '/api/placeholder/400/250',
-      technologies: ['Python', 'Flask', 'Pandas', 'Scikit-learn', 'Yahoo Finance API'],
-      features: [
-        'Dual-model architecture: Logistic Regression for investment safety scoring',
-        'Linear Regression model for next-day stock price forecasting',
-        'Flask web dashboard with real-time visualizations and automated daily predictions',
-      ],
-      github: 'https://github.com/madhavikalmadi/Stock-Prediction',
-      impact: 'Financial Analysis',
-      icon: TrendingUp,
-    },
-    {
-      id: 3,
+      id: 4,
       title: 'Jobseekers Analytics – Applicant Shortlisting Model',
       description:
         'Conducted a structured project following the CRISP-ML(Q) methodology, covering business understanding, data preparation, and modeling. Applied machine learning algorithms including Logistic Regression, Decision Trees, Random Forest, and XGBoost for predictive analysis.',
@@ -89,11 +107,10 @@ const Projects = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
-                selectedCategory === category.id
-                  ? 'bg-primary text-primary-foreground shadow-lg'
-                  : 'bg-card text-card-foreground hover:bg-muted'
-              }`}
+              className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${selectedCategory === category.id
+                ? 'bg-primary text-primary-foreground shadow-lg'
+                : 'bg-card text-card-foreground hover:bg-muted'
+                }`}
             >
               {category.label}
             </button>
