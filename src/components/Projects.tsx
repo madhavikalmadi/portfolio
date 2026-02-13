@@ -16,7 +16,7 @@ const Projects = () => {
         'A comprehensive, performance-driven stock analysis platform built with Streamlit. Analyzes the Indian Stock Market (NSE/BSE) using academic-grade metrics and real-time data.',
       category: 'analytics',
       image: '/api/placeholder/400/250',
-      technologies: ['Python', 'Streamlit', 'yfinance', 'MongoDB', 'Pandas', 'NumPy'],
+      technologies: ['Python', 'Streamlit', 'yfinance', 'MongoDB', 'Pandas', 'NumPy', 'Matplotlib'],
       features: [
         'Real-time market monitoring with personalized dashboard and watchlist analysis feed',
         'Sector & Thematic Advisor for comparing market categories (Banking, IT, etc.)',
@@ -34,7 +34,7 @@ const Projects = () => {
         'Built a platform analyzing 5 IT companies (TCS, Infosys, Wipro, HCL, L&T) using 5 years of Yahoo Finance data. Created dual models: Logistic Regression for investment safety and Linear Regression for next-day forecasts. Designed Flask dashboard with real-time visualizations and automated predictions.',
       category: 'analytics',
       image: '/api/placeholder/400/250',
-      technologies: ['Python', 'Flask', 'Pandas', 'Scikit-learn', 'Yahoo Finance API'],
+      technologies: ['Python', 'Flask', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'Yahoo Finance API'],
       features: [
         'Dual-model architecture: Logistic Regression for investment safety scoring',
         'Linear Regression model for next-day stock price forecasting',
@@ -51,7 +51,7 @@ const Projects = () => {
         'Built an end-to-end data preprocessing and modeling pipeline using Pandas, NumPy, and Scikit-learn. Implemented and compared machine learning models such as Linear Regression and Gradient Boosting to analyze outcomes. Applied data visualization and evaluation metrics to assess model performance effectively.',
       category: 'machine-learning',
       image: '/api/placeholder/400/250',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
+      technologies: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
       features: [
         'Comprehensive data preprocessing with feature engineering on 12+ laptop specifications',
         'Comparative analysis of multiple ML models (Linear Regression, Random Forest, XGBoost)',
@@ -68,7 +68,7 @@ const Projects = () => {
         'Conducted a structured project following the CRISP-ML(Q) methodology, covering business understanding, data preparation, and modeling. Applied machine learning algorithms including Logistic Regression, Decision Trees, Random Forest, and XGBoost for predictive analysis.',
       category: 'analytics',
       image: '/api/placeholder/400/250',
-      technologies: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas', 'Matplotlib'],
+      technologies: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
       features: [
         'CRISP-ML(Q) methodology implementation for structured ML project lifecycle',
         'Multi-algorithm comparison (Logistic Regression, Decision Trees, Random Forest, XGBoost)',
