@@ -20,7 +20,7 @@ const Skills = () => {
       title: 'Programming & Development',
       icon: Code,
       skills: [
-        { name: 'Python', description: 'NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, XGBoost' },
+        { name: 'Python', description: 'NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, yfinance, XGBoost' },
         { name: 'SQL', description: 'MySQL' },
       ]
     },
@@ -31,7 +31,8 @@ const Skills = () => {
         { name: 'Data Cleaning and Preprocessing', description: 'Handling missing values, outliers, and data normalization' },
         { name: 'Exploratory Data Analysis (EDA)', description: 'Visualizing data distributions, correlations, and trends' },
         { name: 'Business Intelligence', description: 'Transforming data into actionable insights for decision-making' },
-        { name: 'Excel', description: 'Advanced formulas, pivot tables, charts' }
+        { name: 'Excel', description: 'Advanced formulas, pivot tables, charts' },
+        { name: 'Streamlit', description: 'Building interactive data web applications and dashboards' }
       ]
     },
     machine_learning: {
@@ -72,8 +73,8 @@ const Skills = () => {
                 key={key}
                 onClick={() => setActiveCategory(key)}
                 className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${activeCategory === key
-                    ? 'bg-primary text-primary-foreground shadow-lg'
-                    : 'bg-card text-card-foreground hover:bg-muted'
+                  ? 'bg-primary text-primary-foreground shadow-lg'
+                  : 'bg-card text-card-foreground hover:bg-muted'
                   }`}
               >
                 <Icon className="h-5 w-5" />
@@ -110,7 +111,7 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold mb-6">Additional Technologies</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Apache Spark', 'Flask', 'MongoDB', 'Streamlit', 'yfinance', 'Linux', 'Hadoop',
+              'Apache Spark', 'Flask', 'MongoDB', 'Linux', 'Hadoop',
             ].map((tech) => (
               <Badge
                 key={tech}
