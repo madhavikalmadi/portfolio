@@ -39,7 +39,7 @@ const Skills = () => {
       title: 'Machine Learning & AI',
       icon: Brain,
       skills: [
-        { name: 'Model Evaluation', description: 'hyperparameter tuning, performance metrics' },
+        { name: 'Model Evaluation', description: 'Hyperparameter tuning, performance metrics' },
         { name: 'Feature Engineering', description: 'Creating and selecting relevant features for models' },
         { name: 'Natural Language Processing (NLP)', description: 'Text processing, sentiment analysis' },
         { name: 'Supervised Learning', description: 'Regression, Classification' },
