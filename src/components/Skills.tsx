@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { 
-  Code, 
-  Database, 
-  BarChart3, 
-  Brain, 
-  FileSpreadsheet, 
+import {
+  Code,
+  Database,
+  BarChart3,
+  Brain,
+  FileSpreadsheet,
   TrendingUp,
   Cpu,
   GitBranch
@@ -20,8 +20,8 @@ const Skills = () => {
       title: 'Programming & Development',
       icon: Code,
       skills: [
-        { name: 'Python', description: 'NumPy, Pandas, Scikit-learn, Matplotlib, XGBoost'},
-        { name: 'SQL', description: 'MySQL'},        
+        { name: 'Python', description: 'NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, XGBoost' },
+        { name: 'SQL', description: 'MySQL' },
       ]
     },
     analytics: {
@@ -71,11 +71,10 @@ const Skills = () => {
               <button
                 key={key}
                 onClick={() => setActiveCategory(key)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
-                  activeCategory === key
+                className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${activeCategory === key
                     ? 'bg-primary text-primary-foreground shadow-lg'
                     : 'bg-card text-card-foreground hover:bg-muted'
-                }`}
+                  }`}
               >
                 <Icon className="h-5 w-5" />
                 <span className="hidden sm:inline">{category.title}</span>
@@ -87,7 +86,7 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-6">
           {skillCategories[activeCategory].skills.map((skill, index) => (
-            <Card 
+            <Card
               key={skill.name}
               className="shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1"
               style={{ animationDelay: `${index * 100}ms` }}
@@ -111,11 +110,11 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold mb-6">Additional Technologies</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Apache Spark', 'Flask', 'MongoDB', 'Linux', 'Hadoop', 
+              'Apache Spark', 'Flask', 'MongoDB', 'Streamlit', 'yfinance', 'Linux', 'Hadoop',
             ].map((tech) => (
-              <Badge 
-                key={tech} 
-                variant="outline" 
+              <Badge
+                key={tech}
+                variant="outline"
                 className="px-3 py-1 text-sm hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
               >
                 {tech}
