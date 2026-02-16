@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, Brain, TrendingUp, Users } from 'lucide-react';
+import { Github, Brain, TrendingUp, Users, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -24,6 +24,7 @@ const Projects = () => {
         'Dual-mode Company Advisor for single stock deep-dives and head-to-head comparisons',
       ],
       github: 'https://github.com/madhavikalmadi/Stock-Analysis-and-Prediction',
+      live: 'https://stock-analysis-and-prediction-qw2nwvktpxkzhbfzxwpakk.streamlit.app/',
       impact: 'Financial Analytics',
       icon: TrendingUp,
     },
@@ -190,6 +191,16 @@ const Projects = () => {
                       <Github className="h-4 w-4 mr-2" />
                       View Code
                     </Button>
+                    {project.live && (
+                      <Button
+                        size="sm"
+                        className="flex-1"
+                        onClick={() => window.open(project.live, '_blank')}
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
