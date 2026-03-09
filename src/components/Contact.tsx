@@ -31,14 +31,14 @@ const Contact = () => {
           {/* Contact Information & Links */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a
-              href="mailto:madhavi@email.com"
+              href="mailto:madhavikalamadi@gmail.com"
               className="custom-card flex flex-col items-center justify-center text-center group cursor-pointer"
             >
               <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <Mail className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">📧 Email</h3>
-              <p className="text-muted-foreground">madhavi@email.com</p>
+              <p className="text-muted-foreground">madhavikalamadi@gmail.com</p>
             </a>
 
             <a
