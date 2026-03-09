@@ -14,8 +14,8 @@ const Footer = () => {
               DataAnalyst Portfolio
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
-              Passionate MCA student specializing in data analysis, machine learning, 
-              and business intelligence. Always eager to tackle new challenges and 
+              Passionate MCA student specializing in data analysis, machine learning,
+              and business intelligence. Always eager to tackle new challenges and
               transform data into actionable insights.
             </p>
           </div>
@@ -25,7 +25,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-3 text-muted-foreground">
               <p>📧 madhavikalmadi@gmail.com</p>
-              <p>📍 India</p>
+              <p>📍 Bengaluru, India</p>
               <p>📱 Available for opportunities</p>
             </div>
           </div>
