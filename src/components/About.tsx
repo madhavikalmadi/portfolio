@@ -44,7 +44,7 @@ const About = () => {
           </div>
 
           {/* Education Cards Grid - 2x2 Layout */}
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
+          <div className="grid md:grid-cols-2 gap-8 mt-6">
             {/* Master's Degree Card */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300">
               <CardContent className="p-6">
