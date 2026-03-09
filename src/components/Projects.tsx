@@ -93,7 +93,7 @@ const Projects = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20 bg-gradient-secondary">
+    <section id="projects" className="py-20 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">Featured Projects</h2>
