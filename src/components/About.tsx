@@ -15,7 +15,7 @@ const About = () => {
       {/* Existing About Section */}
       <section id="about" className="pt-20 pb-20 bg-gradient-secondary">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-8">
+          <div className="text-center mb-2">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
               About Me
             </h2>
