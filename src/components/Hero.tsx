@@ -39,7 +39,7 @@ const Hero = () => {
               asChild
               variant="outline"
               size="lg"
-              className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg font-medium shadow-md transition-all"
+              className="border-primary text-gray-800 hover:text-gray-900 font-bold hover:bg-primary/20 px-8 py-3 text-lg shadow-md transition-all active:text-gray-900 active:font-bold"
             >
               <a href="MadhaviK_Resume.pdf" download>
                 Download Resume
