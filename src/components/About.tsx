@@ -16,7 +16,7 @@ const About = () => {
       <section id="about" className="pt-20 pb-20 bg-gradient-secondary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-0">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-2">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
               About Me
             </h2>
           </div>
@@ -25,7 +25,7 @@ const About = () => {
             {/* Full Width Column - Personal Info */}
             <div className="space-y-2">
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-foreground/80 leading-relaxed font-sans">
+                <p className="text-lg text-gray-700 leading-relaxed font-sans mb-8">
                   I am an MCA student with a strong interest in data analytics
                   and financial data analysis. I enjoy building applications
                   that analyze real-world datasets and generate meaningful insights.
@@ -132,10 +132,10 @@ const About = () => {
       <section id="certifications" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
               Certifications & Achievements
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
               Professional certifications and recognitions that showcase my expertise and dedication
             </p>
           </div>
