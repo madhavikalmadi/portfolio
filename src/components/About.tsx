@@ -13,15 +13,15 @@ const About = () => {
   return (
     <>
       {/* Existing About Section */}
-      <section id="about" className="pt-32 pb-20 bg-gradient-secondary">
+      <section id="about" className="pt-20 pb-20 bg-gradient-secondary">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
               About Me
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-1 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-8 items-center">
             {/* Full Width Column - Personal Info */}
             <div className="space-y-6">
               <div className="prose prose-lg max-w-none">
