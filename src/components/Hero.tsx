@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="hero relative overflow-hidden">
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
