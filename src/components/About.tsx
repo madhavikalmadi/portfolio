@@ -15,15 +15,15 @@ const About = () => {
       {/* Existing About Section */}
       <section id="about" className="pt-20 pb-20 bg-gradient-secondary">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-2">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+          <div className="text-center mb-0">
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-2">
               About Me
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-1 gap-8 items-center">
+          <div className="grid lg:grid-cols-1 gap-2 items-center">
             {/* Full Width Column - Personal Info */}
-            <div className="space-y-6">
+            <div className="space-y-2">
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-foreground/80 leading-relaxed font-sans">
                   I am an MCA student with a strong interest in data analytics
@@ -44,7 +44,7 @@ const About = () => {
           </div>
 
           {/* Education Cards Grid - 2x2 Layout */}
-          <div className="grid md:grid-cols-2 gap-8 mt-6">
+          <div className="grid md:grid-cols-2 gap-8 mt-2">
             {/* Master's Degree Card */}
             <Card className="glass-card border-0 shadow-card hover:shadow-hover transition-all duration-300">
               <CardContent className="p-6">
