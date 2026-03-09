@@ -146,7 +146,7 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                  <CardDescription className="text-base leading-relaxed">
+                  <CardDescription className="text-base leading-relaxed text-gray-600">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -159,7 +159,7 @@ const Projects = () => {
                       {project.features.map((feature, idx) => (
                         <li
                           key={idx}
-                          className="text-sm text-muted-foreground flex items-start gap-2"
+                          className="text-sm text-gray-600 flex items-start gap-2"
                         >
                           <span className="h-1.5 w-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                           {feature}
@@ -172,7 +172,7 @@ const Projects = () => {
                   <div className="mb-6">
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="outline" className="text-xs">
+                        <Badge key={tech} variant="outline" className="text-xs text-gray-700 border-gray-300">
                           {tech}
                         </Badge>
                       ))}

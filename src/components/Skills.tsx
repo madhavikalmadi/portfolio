@@ -101,7 +101,7 @@ const Skills = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-gray-600">
                   {skill.description}
                 </p>
               </CardContent>
@@ -119,7 +119,7 @@ const Skills = () => {
               <Badge
                 key={tech}
                 variant="outline"
-                className="px-3 py-1 text-sm hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+                className="px-3 py-1 text-sm text-gray-800 border-gray-300 hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
               >
                 {tech}
               </Badge>
