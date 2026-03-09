@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       {/* Education Section - LIGHT */}
-      <section id="education" className="py-16 bg-transparent">
+      <section id="education" className="bg-transparent">
         <div className="container mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">

@@ -165,7 +165,15 @@ All colors MUST be HSL.
 
   /* Global section padding */
   section {
-    padding: 80px 0;
+    padding: 100px 0;
+  }
+
+  #education {
+    margin-top: 100px;
+  }
+
+  .scroll-indicator {
+    margin-top: 40px;
   }
 }
 

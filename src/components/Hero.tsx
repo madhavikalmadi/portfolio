@@ -72,7 +72,7 @@ const Hero = () => {
 
       <div
         onClick={scrollToNext}
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer z-20 group"
+        className="scroll-indicator absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer z-20 group"
       >
         <div className="flex flex-col items-center text-gray-400 group-hover:text-white transition-colors duration-300">
           <span className="text-sm font-medium tracking-wide mb-3 uppercase">Scroll to see projects</span>
