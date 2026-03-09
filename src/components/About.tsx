@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       {/* Existing About Section */}
-      <section id="about" className="py-20 bg-gradient-secondary">
+      <section id="about" className="pt-32 pb-20 bg-gradient-secondary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">

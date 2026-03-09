@@ -73,7 +73,7 @@ const Contact = () => {
               <div className="p-4 bg-green-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <Download className="h-8 w-8 text-green-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Resume</h3>
+              <h3 className="text-xl font-semibold mb-2">Download Resume</h3>
               <p className="text-muted-foreground">Download PDF</p>
             </a>
           </div>
