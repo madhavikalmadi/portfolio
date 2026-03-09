@@ -55,13 +55,13 @@ const Skills = () => {
   const categoryKeys = Object.keys(skillCategories);
 
   return (
-    <section id="skills" className="py-20 bg-background">
+    <section id="skills" className="py-20 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white border-b-4 border-primary inline-block pb-2 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
             Technical Skills
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
             A comprehensive toolkit for modern data analysis and machine learning
           </p>
         </div>
@@ -111,7 +111,7 @@ const Skills = () => {
 
         {/* Additional Skills Tags */}
         <div className="mt-12 text-center">
-          <h3 className="text-2xl font-semibold mb-6 text-white">Additional Technologies</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-gray-900">Additional Technologies</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               'Apache Spark', 'Flask', 'MongoDB', 'Linux', 'Hadoop',
