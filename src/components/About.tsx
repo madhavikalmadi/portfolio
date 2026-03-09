@@ -12,17 +12,6 @@ import outskillImg from '/outskill.jpg';
 const About = () => {
   return (
     <>
-      {/* About Section - LIGHT */}
-      <section id="about" className="pt-20 pb-12 bg-transparent">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-0">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
-              About Me
-            </h2>
-          </div>
-        </div>
-      </section>
-
       {/* Education Section - LIGHT GREY */}
       <section id="education" className="py-16 bg-[#f7f7f7]">
         <div className="container mx-auto px-6">
