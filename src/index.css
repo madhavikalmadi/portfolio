@@ -172,10 +172,7 @@ All colors MUST be HSL.
     margin-top: 100px;
   }
 
-  .scroll-indicator {
-    position: relative;
-    top: 20px;
-  }
+
 
   .hero {
     min-height: 85vh;
@@ -189,23 +186,23 @@ All colors MUST be HSL.
 
   .hero h1 {
     font-size: 52px;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
   }
 
   .hero .subtitle {
-    margin-bottom: 12px;
+    margin-bottom: 18px;
   }
 
   .hero .location {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .hero .tech-stack {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
   }
 
   .hero .description {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
