@@ -20,7 +20,7 @@ const Skills = () => {
       title: 'Programming & Development',
       icon: Code,
       skills: [
-        { name: '🐍 Python', description: 'NumPy • Scikit-learn • Matplotlib • Seaborn • yfinance • XGBoost' },
+        { name: '🐍 Python', description: 'Data analysis, visualization, and machine learning using NumPy • Scikit-learn • Matplotlib • Seaborn • yfinance • XGBoost' },
         { name: '🗄 SQL', description: 'MySQL' },
         { name: '🌐 HTML', description: 'Web structure and semantics' },
         { name: '🎨 CSS', description: 'Styling and responsive design' },
