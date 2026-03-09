@@ -25,12 +25,19 @@ const About = () => {
             {/* Full Width Column - Personal Info */}
             <div className="space-y-6">
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-foreground/80 leading-relaxed">
-                  I am a passionate MCA student with hands-on experience in data science and machine learning.
-                  I enjoy turning complex data into actionable insights through predictive modeling and analytics.
-                  I have worked with Python, machine learning frameworks, and data visualization tools to solve
-                  real-world problems. I am enthusiastic about leveraging my skills to contribute to innovative
-                  data-driven solutions and keen to keep learning in this exciting field.
+                <p className="text-lg text-foreground/80 leading-relaxed font-sans">
+                  I am an MCA student with a strong interest in data analytics
+                  and financial data analysis. I enjoy building applications
+                  that analyze real-world datasets and generate meaningful insights.
+                  <br /><br />
+                  My primary skills include Python, SQL, and data analysis
+                  using libraries such as Pandas and NumPy. I also work with
+                  web technologies like HTML, CSS, and JavaScript to build
+                  interactive applications and dashboards.
+                  <br /><br />
+                  I aim to start my career as a Data Analyst where I can
+                  apply data analysis techniques to solve real-world
+                  problems and build intelligent data-driven solutions.
                 </p>
               </div>
             </div>

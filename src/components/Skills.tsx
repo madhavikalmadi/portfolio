@@ -20,14 +20,17 @@ const Skills = () => {
       title: 'Programming & Development',
       icon: Code,
       skills: [
-        { name: 'Python', description: 'NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, yfinance, XGBoost' },
-        { name: 'SQL', description: 'MySQL' },
+        { name: '🐍 Python', description: 'NumPy, Scikit-learn, Matplotlib, Seaborn, yfinance, XGBoost' },
+        { name: '🗄 SQL', description: 'MySQL' },
+        { name: '🌐 HTML', description: 'Web structure and semantics' },
+        { name: '🎨 CSS', description: 'Styling and responsive design' },
       ]
     },
     analytics: {
       title: 'Data Analytics & Business Intelligence (BI)',
       icon: BarChart3,
       skills: [
+        { name: '📊 Pandas', description: 'Data manipulation and analysis' },
         { name: 'Data Cleaning and Preprocessing', description: 'Handling missing values, outliers, and data normalization' },
         { name: 'Exploratory Data Analysis (EDA)', description: 'Visualizing data distributions, correlations, and trends' },
         { name: 'Business Intelligence', description: 'Transforming data into actionable insights for decision-making' },

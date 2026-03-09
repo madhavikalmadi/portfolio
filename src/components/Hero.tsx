@@ -15,29 +15,45 @@ const Hero = () => {
             Madhavi K
           </h1>
           <h2 className="text-lg md:text-xl text-gray-600 font-medium mb-6">
-            Data Analyst | Python | SQL | Financial Data Analytics
+            Aspiring Data Analyst | MCA Student
           </h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
-            Transforming Data into{' '}
-            <span className="text-transparent bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text">
-              Insights
-            </span>
-          </h3>
 
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate about uncovering patterns in data and building intelligent solutions.
-            Currently pursuing MCA with expertise in Python, Machine Learning, and Business Intelligence.
+            I build data-driven applications and analytics dashboards
+            using Python, SQL and financial data analysis.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               asChild
+              variant="default"
+              size="lg"
+              className="px-8 py-3 text-lg font-medium shadow-md hover:shadow-lg transition-all"
+            >
+              <a href="#projects">
+                View Projects
+              </a>
+            </Button>
+
+            <Button
+              asChild
               variant="outline"
               size="lg"
-              className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg"
+              className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg font-medium shadow-md transition-all"
             >
               <a href="MadhaviK_Resume.pdf" download>
                 Download Resume
+              </a>
+            </Button>
+
+            <Button
+              asChild
+              variant="secondary"
+              size="lg"
+              className="px-8 py-3 text-lg font-medium shadow-md hover:shadow-lg transition-all"
+            >
+              <a href="#contact">
+                Contact
               </a>
             </Button>
           </div>
@@ -46,11 +62,11 @@ const Hero = () => {
 
       <div
         onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer z-20"
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer z-20 group"
       >
-        <div className="flex flex-col items-center text-gray-700 hover:text-gray-900 transition-colors duration-300">
-          <span className="text-sm mb-2">Scroll to explore</span>
-          <ChevronDown className="h-6 w-6" />
+        <div className="flex flex-col items-center text-gray-400 group-hover:text-white transition-colors duration-300">
+          <span className="text-sm font-medium tracking-wide mb-3 uppercase">Scroll to see projects</span>
+          <ChevronDown className="h-8 w-8 animate-bounce" />
         </div>
       </div>
     </section>

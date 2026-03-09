@@ -18,10 +18,12 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
-            Get In Touch
+            Open to Opportunities
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let's discuss data, opportunities, or collaborate on exciting projects
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
+            I am currently seeking opportunities in Data Analytics
+            and Software Development where I can apply my skills
+            in Python, SQL, and data analysis to solve real-world problems.
           </p>
         </div>
 
@@ -29,14 +31,14 @@ const Contact = () => {
           {/* Contact Information & Links */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a
-              href="mailto:madhavikalmadi@gmail.com"
+              href="mailto:madhavi@email.com"
               className="custom-card flex flex-col items-center justify-center text-center group cursor-pointer"
             >
               <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <Mail className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-muted-foreground">madhavikalmadi@gmail.com</p>
+              <h3 className="text-xl font-semibold mb-2">📧 Email</h3>
+              <p className="text-muted-foreground">madhavi@email.com</p>
             </a>
 
             <a
@@ -48,8 +50,8 @@ const Contact = () => {
               <div className="p-4 bg-blue-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <Linkedin className="h-8 w-8 text-blue-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
-              <p className="text-muted-foreground">Connect with me</p>
+              <h3 className="text-xl font-semibold mb-2">💼 LinkedIn</h3>
+              <p className="text-muted-foreground">linkedin.com/in/madhavi-k-0b3664254/</p>
             </a>
 
             <a
@@ -61,8 +63,8 @@ const Contact = () => {
               <div className="p-4 bg-foreground/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <Github className="h-8 w-8 text-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">GitHub</h3>
-              <p className="text-muted-foreground">Check out my code</p>
+              <h3 className="text-xl font-semibold mb-2">💻 GitHub</h3>
+              <p className="text-muted-foreground">github.com/madhavikalmadi</p>
             </a>
 
             <a
@@ -73,8 +75,8 @@ const Contact = () => {
               <div className="p-4 bg-green-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <Download className="h-8 w-8 text-green-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Download Resume</h3>
-              <p className="text-muted-foreground">Download PDF</p>
+              <h3 className="text-xl font-semibold mb-2">📄 Resume</h3>
+              <p className="text-muted-foreground">Download Resume</p>
             </a>
           </div>
         </div>
