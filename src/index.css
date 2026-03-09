@@ -175,6 +175,38 @@ All colors MUST be HSL.
   .scroll-indicator {
     margin-top: 40px;
   }
+
+  .hero {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .hero h1 {
+    margin-bottom: 18px;
+  }
+
+  .hero .subtitle {
+    margin-bottom: 12px;
+  }
+
+  .hero .location {
+    margin-bottom: 15px;
+  }
+
+  .hero .tech-stack {
+    margin-bottom: 22px;
+  }
+
+  .hero .description {
+    margin-bottom: 35px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    margin-top: 40px;
+  }
 }
 
 @layer components {

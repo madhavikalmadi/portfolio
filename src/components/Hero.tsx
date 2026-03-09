@@ -8,17 +8,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="hero relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
             Madhavi K
           </h1>
-          <h2 className="text-lg md:text-xl text-gray-600 font-medium mb-3">
+          <h2 className="subtitle text-lg md:text-xl text-gray-600 font-medium">
             Aspiring Data Analyst | MCA Student
           </h2>
 
-          <div className="flex justify-center gap-3 text-sm md:text-base font-semibold text-primary mb-6">
+          <div className="location text-md md:text-lg text-gray-500 font-medium">
+            Bengaluru • Open to Data Analyst Roles
+          </div>
+
+          <div className="tech-stack flex justify-center gap-3 text-sm md:text-base font-semibold text-primary">
             <span>Python</span>
             <span>•</span>
             <span>SQL</span>
@@ -26,14 +30,16 @@ const Hero = () => {
             <span>Pandas</span>
             <span>•</span>
             <span>Machine Learning</span>
+            <span>•</span>
+            <span>Data Visualization</span>
           </div>
 
-          <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="description text-lg md:text-xl text-gray-600 leading-relaxed">
             I build data-driven applications and analytics dashboards
             using Python, SQL and financial data analysis.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               asChild
               variant="default"
