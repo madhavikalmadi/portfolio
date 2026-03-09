@@ -8,15 +8,25 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3 leading-tight">
             Madhavi K
           </h1>
-          <h2 className="text-lg md:text-xl text-gray-600 font-medium mb-6">
+          <h2 className="text-lg md:text-xl text-gray-600 font-medium mb-3">
             Aspiring Data Analyst | MCA Student
           </h2>
+
+          <div className="flex justify-center gap-3 text-sm md:text-base font-semibold text-primary mb-6">
+            <span>Python</span>
+            <span>•</span>
+            <span>SQL</span>
+            <span>•</span>
+            <span>Pandas</span>
+            <span>•</span>
+            <span>Machine Learning</span>
+          </div>
 
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
             I build data-driven applications and analytics dashboards
