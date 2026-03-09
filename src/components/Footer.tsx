@@ -24,7 +24,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-3 text-muted-foreground">
-              <p>📧 madhavikalmadi@gmail.com</p>
+              <p>📧 madhavikalamadi@gmail.com</p>
               <p>📍 Bengaluru, India</p>
               <p>📱 Available for opportunities</p>
             </div>
