@@ -24,7 +24,7 @@ const About = () => {
           <div className="grid lg:grid-cols-1 gap-2 items-center">
             {/* Full Width Column - Personal Info */}
             <div className="space-y-2">
-              <div className="prose prose-lg max-w-none">
+              <div className="max-w-none">
                 <p className="text-lg text-gray-700 leading-relaxed font-sans mb-8">
                   I am an MCA student with a strong interest in data analytics
                   and financial data analysis. I enjoy building applications
