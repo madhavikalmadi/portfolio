@@ -8,21 +8,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero relative overflow-hidden">
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+    <section className="hero relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden py-32 md:py-40">
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-[48px] md:text-[52px] font-bold text-gray-800 leading-tight mb-8">
             Madhavi K
           </h1>
-          <h2 className="subtitle text-lg md:text-xl text-gray-600 font-medium">
+          <h2 className="subtitle text-xl md:text-2xl text-gray-600 font-medium mb-6">
             Aspiring Data Analyst | MCA Student
           </h2>
 
-          <div className="location text-md md:text-lg text-gray-500 font-medium">
+          <div className="location text-[18px] md:text-[20px] text-gray-500 font-medium mb-6">
             Bengaluru • Open to Data Analyst Roles
           </div>
 
-          <div className="tech-stack flex justify-center gap-3 text-sm md:text-base font-semibold text-primary">
+          <div className="tech-stack flex justify-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base font-semibold text-primary mb-10">
             <span>Python</span>
             <span>•</span>
             <span>SQL</span>
@@ -34,12 +34,12 @@ const Hero = () => {
             <span>Data Visualization</span>
           </div>
 
-          <p className="description text-lg md:text-xl text-gray-600 leading-relaxed">
+          <p className="description text-lg md:text-xl text-gray-600 leading-relaxed max-w-[650px] mx-auto mb-12">
             I build data-driven applications and analytics dashboards
             using Python, SQL and financial data analysis.
           </p>
 
-          <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="hero-buttons flex flex-col sm:flex-row gap-6 justify-center items-center mt-10">
             <Button
               asChild
               variant="default"
@@ -78,11 +78,11 @@ const Hero = () => {
 
       <div
         onClick={scrollToNext}
-        className="scroll-indicator absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer z-20 group"
+        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer z-50 group px-4 py-2"
       >
-        <div className="flex flex-col items-center text-gray-400 group-hover:text-white transition-colors duration-300">
-          <span className="text-sm font-medium tracking-wide mb-3 uppercase">Scroll to see projects</span>
-          <ChevronDown className="h-8 w-8 animate-bounce" />
+        <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
+          <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
+          <ChevronDown className="h-6 w-6 animate-bounce" />
         </div>
       </div>
     </section>
