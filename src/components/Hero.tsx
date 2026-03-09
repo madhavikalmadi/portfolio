@@ -11,10 +11,10 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div>
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3 leading-tight">
             Madhavi K
           </h1>
-          <h2 className="text-xl md:text-3xl text-gray-600 font-medium mb-8">
+          <h2 className="text-lg md:text-xl text-gray-600 font-medium mb-6">
             Data Analyst | Python | SQL | Financial Data Analytics
           </h2>
           <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
