@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { 
-  Mail, 
-  MapPin, 
-  Phone, 
-  Linkedin, 
-  Github, 
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Linkedin,
+  Github,
   Twitter,
   Send,
   Download
@@ -25,67 +25,57 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-md mx-auto">
-          {/* Contact Information */}
-          <div className="space-y-6">
-            <Card className="shadow-card hover:shadow-hover transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-primary" />
-                  Email
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">madhavikalmadi@gmail.com</p>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card hover:shadow-hover transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  Location
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">India</p>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card hover:shadow-hover transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary" />
-                  Phone
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">+91 9663374433</p>
-              </CardContent>
-            </Card>
-
-            {/* Social Links */}
-            <div className="pt-6">
-              <h3 className="text-lg font-semibold mb-4 text-center">Connect With Me</h3>
-              <div className="flex gap-4 justify-center">
-                <Button 
-                  variant="outline" 
-                  size="icon" 
-                  className="hover:bg-primary hover:text-primary-foreground"
-                  onClick={() => window.open('https://www.linkedin.com/in/madhavi-k-0b3664254/', '_blank')}
-                >
-                  <Linkedin className="h-5 w-5" />
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="icon" 
-                  className="hover:bg-primary hover:text-primary-foreground"
-                  onClick={() => window.open('https://github.com/madhavikalmadi', '_blank')}
-                >
-                  <Github className="h-5 w-5" />
-                </Button>
+        <div className="max-w-4xl mx-auto">
+          {/* Contact Information & Links */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a
+              href="mailto:madhavikalmadi@gmail.com"
+              className="custom-card flex flex-col items-center justify-center text-center group cursor-pointer"
+            >
+              <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                <Mail className="h-8 w-8 text-primary" />
               </div>
-            </div>
+              <h3 className="text-xl font-semibold mb-2">Email</h3>
+              <p className="text-muted-foreground">madhavikalmadi@gmail.com</p>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/madhavi-k-0b3664254/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="custom-card flex flex-col items-center justify-center text-center group cursor-pointer"
+            >
+              <div className="p-4 bg-blue-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                <Linkedin className="h-8 w-8 text-blue-500" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
+              <p className="text-muted-foreground">Connect with me</p>
+            </a>
+
+            <a
+              href="https://github.com/madhavikalmadi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="custom-card flex flex-col items-center justify-center text-center group cursor-pointer"
+            >
+              <div className="p-4 bg-foreground/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                <Github className="h-8 w-8 text-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">GitHub</h3>
+              <p className="text-muted-foreground">Check out my code</p>
+            </a>
+
+            <a
+              href="MadhaviK_Resume.pdf"
+              download
+              className="custom-card flex flex-col items-center justify-center text-center group cursor-pointer"
+            >
+              <div className="p-4 bg-green-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                <Download className="h-8 w-8 text-green-500" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Resume</h3>
+              <p className="text-muted-foreground">Download PDF</p>
+            </a>
           </div>
         </div>
       </div>

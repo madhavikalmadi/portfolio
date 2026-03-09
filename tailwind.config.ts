@@ -19,7 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
+				sans: ['"Open Sans"', 'system-ui', 'sans-serif'],
+				display: ['Poppins', '"Inter"', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

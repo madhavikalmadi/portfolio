@@ -9,43 +9,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 252 100% 99%;
-    --foreground: 222 47% 11%;
+    --background: 222 47% 11%;
+    /* #0f172a dark navy */
+    --foreground: 0 0% 100%;
+    /* white */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 222 47% 14%;
+    /* slightly lighter navy */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 262 83% 58%;
+    --primary: 217 91% 60%;
+    /* #3b82f6 blue */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 252 100% 97%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 222 47% 18%;
+    /* even lighter navy for secondary */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 252 100% 95%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 222 47% 18%;
+    --muted-foreground: 214 32% 91%;
+    /* #e2e8f0 light gray */
 
-    --accent: 234 89% 74%;
+    --accent: 142 71% 45%;
+    /* #22c55e green */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 252 100% 92%;
-    --input: 252 100% 92%;
-    --ring: 262 83% 58%;
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 217 91% 60%;
+    /* Primary blue */
 
     /* Custom portfolio colors */
-    --primary-gradient: linear-gradient(135deg, hsl(262 83% 58%), hsl(234 89% 74%));
-    --secondary-gradient: linear-gradient(135deg, hsl(252 100% 97%), hsl(234 89% 93%));
-    --hero-gradient: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(234 89% 74%) 50%, hsl(198 93% 85%) 100%);
-    --data-viz-primary: 262 83% 58%;
-    --data-viz-secondary: 234 89% 74%;
+    --primary-gradient: linear-gradient(135deg, hsl(217 91% 60%), hsl(220 90% 80%));
+    --secondary-gradient: linear-gradient(135deg, hsl(222 47% 14%), hsl(222 47% 8%));
+    --hero-gradient: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(142 71% 45%) 100%);
+    --data-viz-primary: 217 91% 60%;
+    --data-viz-secondary: 142 71% 45%;
     --data-viz-tertiary: 198 93% 85%;
-    --glass-bg: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-bg: rgba(15, 23, 42, 0.7);
+    /* dark navy with opacity */
+    --glass-border: rgba(255, 255, 255, 0.1);
 
     /* Animation variables */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,7 +77,8 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* NEW: Variable for page background, using a very subtle light HSL */
-    --page-background: 180 50% 98%; /* This is the current light green/aqua tint */
+    --page-background: 180 50% 98%;
+    /* This is the current light green/aqua tint */
   }
 
   .dark {
@@ -127,17 +137,54 @@ All colors MUST be HSL.
     margin: 0;
     padding: 0;
 
-    @apply text-foreground; /* Keep the text color defined by your theme */
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    min-height: 100vh; /* Ensures background covers the full viewport height */
+    @apply text-foreground font-sans;
+    /* Keep the text color defined by your theme */
+    min-height: 100vh;
+    /* Ensures background covers the full viewport height */
+    font-size: 16px;
+    /* Body text size */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight text-white;
+  }
+
+  /* Specific Heading Sizes from User Request */
+  h1 {
+    font-size: clamp(40px, 5vw, 48px);
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  /* Global section padding */
+  section {
+    padding: 80px 0;
   }
 }
 
 @layer components {
-  .glass-card {
-    @apply backdrop-blur-lg border border-white/20 shadow-lg;
+
+  /* Updated card and general component styles based on user request */
+  .glass-card,
+  .custom-card {
+    @apply backdrop-blur-lg border border-white/10;
     background: var(--glass-bg);
-    box-shadow: var(--shadow-glass);
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: 0.3s;
+  }
+
+  .glass-card:hover,
+  .custom-card:hover {
+    transform: translateY(-5px);
   }
 
   .gradient-primary {
