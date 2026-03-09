@@ -31,13 +31,13 @@ const About = () => {
                     <GraduationCap className="h-6 w-6 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                    <h3 className="text-xl font-semibold text-white mb-2">
                       Master of Computer Applications (MCA)
                     </h3>
-                    <p className="text-sm text-foreground/60 mb-3">
+                    <p className="text-sm text-white/60 mb-3">
                       PES University, Bengaluru
                     </p>
-                    <p className="text-foreground/70 mb-2">Currently Pursuing • 2024 - 2026</p>
+                    <p className="text-white/70 mb-2">Currently Pursuing • 2024 - 2026</p>
                   </div>
                 </div>
               </CardContent>
@@ -51,13 +51,13 @@ const About = () => {
                     <BookOpen className="h-6 w-6 text-blue-500" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                    <h3 className="text-xl font-semibold text-white mb-2">
                       Bachelor of Computer Applications (BCA)
                     </h3>
-                    <p className="text-sm text-foreground/60 mb-3">
+                    <p className="text-sm text-white/60 mb-3">
                       Christ Academy Institute for Advanced Studies, Bengaluru
                     </p>
-                    <p className="text-foreground/70 mb-2">Completed • 2021 - 2024</p>
+                    <p className="text-white/70 mb-2">Completed • 2021 - 2024</p>
                   </div>
                 </div>
               </CardContent>
@@ -71,13 +71,13 @@ const About = () => {
                     <School className="h-6 w-6 text-green-500" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                    <h3 className="text-xl font-semibold text-white mb-2">
                       Higher Secondary Education (12th Grade)
                     </h3>
-                    <p className="text-sm text-foreground/60 mb-3">
+                    <p className="text-sm text-white/60 mb-3">
                       Pupil Tree College, Bellary
                     </p>
-                    <p className="text-foreground/70 mb-2">Completed • 2019 - 2021</p>
+                    <p className="text-white/70 mb-2">Completed • 2019 - 2021</p>
                   </div>
                 </div>
               </CardContent>
@@ -91,13 +91,13 @@ const About = () => {
                     <School className="h-6 w-6 text-orange-500" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                    <h3 className="text-xl font-semibold text-white mb-2">
                       Secondary School Education (10th Grade)
                     </h3>
-                    <p className="text-sm text-foreground/60 mb-3">
+                    <p className="text-sm text-white/60 mb-3">
                       St Dominic's School, Bengaluru
                     </p>
-                    <p className="text-foreground/70 mb-2">Completed • 2018 - 2019</p>
+                    <p className="text-white/70 mb-2">Completed • 2018 - 2019</p>
                   </div>
                 </div>
               </CardContent>
@@ -133,10 +133,10 @@ const About = () => {
                   <Award className="h-5 w-5 text-primary" />
                   <span className="text-sm text-primary font-medium">September 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   Data Analyst Program - Odin School
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed">
+                <p className="text-sm text-white/70 leading-relaxed">
                   Completed structured training program covering data analysis, statistical methods, and visualization tools.
                 </p>
               </CardContent>
@@ -156,10 +156,10 @@ const About = () => {
                   <Award className="h-5 w-5 text-accent" />
                   <span className="text-sm text-accent font-medium">Certificate of Participation</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   Hack2skill Certificate
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed">
+                <p className="text-sm text-white/70 leading-relaxed">
                   Certificate of participation in technical skills development program focused on enhancing programming and problem-solving abilities.
                 </p>
               </CardContent>
@@ -179,10 +179,10 @@ const About = () => {
                   <Award className="h-5 w-5 text-accent" />
                   <span className="text-sm text-accent font-medium">Certificate of Participation</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   Mysticode Certificate
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed">
+                <p className="text-sm text-white/70 leading-relaxed">
                   Participated in a 24-hour application development hackathon as team MYSTICODE, presenting the project "WellSync" at PES University.
                 </p>
               </CardContent>
@@ -202,10 +202,10 @@ const About = () => {
                   <Award className="h-5 w-5 text-accent" />
                   <span className="text-sm text-accent font-medium">Certificate of Participation</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   Outskill Certificate
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed">
+                <p className="text-sm text-white/70 leading-relaxed">
                   Completed the Generative AI Mastermind program, demonstrating applied proficiency in contemporary generative AI workflows.
                 </p>
               </CardContent>
@@ -225,10 +225,10 @@ const About = () => {
                   <Award className="h-5 w-5 text-orange-500" />
                   <span className="text-sm text-orange-500 font-medium">Top 5,000 Teams</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   Build With India - Hackathon
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed">
+                <p className="text-sm text-white/70 leading-relaxed">
                   Recognized among the top 5,000 teams out of 25,000 in the national-level Build With India Hackathon (Finale at Google Office).
                 </p>
               </CardContent>

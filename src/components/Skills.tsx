@@ -96,12 +96,12 @@ const Skills = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader className="pb-4">
-                <CardTitle className="text-lg font-semibold">
+                <CardTitle className="text-lg font-semibold text-white">
                   {skill.name}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-white/90">
                   {skill.description}
                 </p>
               </CardContent>

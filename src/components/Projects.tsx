@@ -135,7 +135,7 @@ const Projects = () => {
                         <Icon className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                        <CardTitle className="text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
                           {project.title}
                         </CardTitle>
                         <div className="flex items-center gap-2 mt-1">
@@ -146,7 +146,7 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                  <CardDescription className="text-base leading-relaxed text-gray-600">
+                  <CardDescription className="text-base leading-relaxed text-white/80">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -154,12 +154,12 @@ const Projects = () => {
                 <CardContent>
                   {/* Key Features */}
                   <div className="mb-6">
-                    <h4 className="font-semibold mb-3 text-foreground">Key Features:</h4>
+                    <h4 className="font-semibold mb-3 text-white">Key Features:</h4>
                     <ul className="space-y-2">
                       {project.features.map((feature, idx) => (
                         <li
                           key={idx}
-                          className="text-sm text-gray-600 flex items-start gap-2"
+                          className="text-sm text-gray-200 flex items-start gap-2"
                         >
                           <span className="h-1.5 w-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                           {feature}
@@ -172,7 +172,7 @@ const Projects = () => {
                   <div className="mb-6">
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="outline" className="text-xs text-gray-700 border-gray-300">
+                        <Badge key={tech} variant="outline" className="text-xs text-white border-white/20">
                           {tech}
                         </Badge>
                       ))}
