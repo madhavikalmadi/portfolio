@@ -107,7 +107,7 @@ const About = () => {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 bg-background">
+      <section id="certifications" className="py-20 bg-[#f7f7f7]">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
