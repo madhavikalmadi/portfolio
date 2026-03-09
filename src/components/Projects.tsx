@@ -96,8 +96,8 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white border-b-4 border-primary inline-block pb-2 mb-4">Featured Projects</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">Featured Projects</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
             Real-world data science projects showcasing end-to-end analytical capabilities
           </p>
         </div>
