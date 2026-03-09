@@ -11,12 +11,18 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div>
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4 leading-tight">
+            Madhavi K
+          </h1>
+          <h2 className="text-xl md:text-3xl text-gray-600 font-medium mb-8">
+            Data Analyst | Python | SQL | Financial Data Analytics
+          </h2>
+          <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
             Transforming Data into{' '}
             <span className="text-transparent bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text">
               Insights
             </span>
-          </h1>
+          </h3>
 
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
             Passionate about uncovering patterns in data and building intelligent solutions.
