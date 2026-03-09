@@ -21,20 +21,6 @@ const About = () => {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-1 gap-2 items-center">
-            {/* Full Width Column - Personal Info */}
-            <div className="space-y-2">
-              <div className="max-w-none text-center">
-                <p className="text-lg text-gray-700 leading-relaxed font-sans mb-8">
-                  My primary skills include Python, SQL, and data analysis
-                  using libraries such as Pandas and NumPy. I also work with
-                  web technologies like HTML, CSS, and JavaScript to build
-                  interactive applications and dashboards.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Education Cards Grid - 2x2 Layout */}
           <div className="grid md:grid-cols-2 gap-8 mt-2">
             {/* Master's Degree Card */}
