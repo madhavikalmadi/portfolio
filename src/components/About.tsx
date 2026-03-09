@@ -12,12 +12,23 @@ import outskillImg from '/outskill.jpg';
 const About = () => {
   return (
     <>
-      {/* Existing About Section */}
-      <section id="about" className="pt-20 pb-20 bg-[#f7f7f7]">
+      {/* About Section - LIGHT */}
+      <section id="about" className="pt-20 pb-12 bg-transparent">
         <div className="container mx-auto px-6">
           <div className="text-center mb-0">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
               About Me
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section - LIGHT GREY */}
+      <section id="education" className="py-16 bg-[#f7f7f7]">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
+              Education
             </h2>
           </div>
 
@@ -106,14 +117,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Certifications Section */}
-      <section id="certifications" className="py-20 bg-[#f7f7f7]">
+      {/* Certifications Section - DARK */}
+      <section id="certifications" className="py-20 bg-background text-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 border-b-4 border-primary inline-block pb-2 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white border-b-4 border-primary inline-block pb-2 mb-4">
               Certifications & Achievements
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6">
               Professional certifications and recognitions that showcase my expertise and dedication
             </p>
           </div>
