@@ -37,9 +37,9 @@ const Hero = () => {
 
             <Button
               asChild
-              variant="outline"
+              variant="default"
               size="lg"
-              className="border-primary text-gray-800 hover:text-gray-900 font-bold hover:bg-primary/20 px-8 py-3 text-lg shadow-md transition-all active:text-gray-900 active:font-bold"
+              className="px-8 py-3 text-lg font-medium shadow-md hover:shadow-lg transition-all"
             >
               <a href="MadhaviK_Resume.pdf" download>
                 Download Resume
@@ -48,7 +48,7 @@ const Hero = () => {
 
             <Button
               asChild
-              variant="secondary"
+              variant="default"
               size="lg"
               className="px-8 py-3 text-lg font-medium shadow-md hover:shadow-lg transition-all"
             >
