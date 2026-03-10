@@ -78,7 +78,7 @@ const Hero = () => {
 
       <div
         onClick={scrollToNext}
-        className="absolute bottom-24 left-1/2 transform -translate-x-1/2 cursor-pointer z-50 group px-4 py-2"
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer z-50 group px-4 py-2"
       >
         <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
           <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
