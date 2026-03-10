@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden py-16 md:py-20">
+    <section className="hero relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden py-8 md:py-10">
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
         <div>
           <h1 className="text-[48px] md:text-[52px] font-bold text-gray-800 leading-tight mb-8">
@@ -78,7 +78,7 @@ const Hero = () => {
 
       <div
         onClick={scrollToNext}
-        className="absolute bottom-16 left-1/2 transform -translate-x-1/2 cursor-pointer z-50 group px-4 py-2"
+        className="absolute bottom-24 left-1/2 transform -translate-x-1/2 cursor-pointer z-50 group px-4 py-2"
       >
         <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
           <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
