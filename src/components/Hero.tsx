@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden py-8 md:py-10">
+    <section className="hero relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden pt-8 pb-28 md:pt-10 md:pb-28">
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
         <div>
           <h1 className="text-[48px] md:text-[52px] font-bold text-gray-800 leading-tight mb-8">
