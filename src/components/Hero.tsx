@@ -8,8 +8,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden pt-8 pb-28 md:pt-10 md:pb-28">
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
+    <section className="hero relative min-h-[85vh] flex flex-col overflow-hidden">
+      {/* Main content — centered in the flex column */}
+      <div className="flex-1 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto w-full pt-8 md:pt-10">
         <div>
           <h1 className="text-[48px] md:text-[52px] font-bold text-gray-800 leading-tight mb-8">
             Madhavi K
@@ -76,9 +77,10 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Scroll indicator — naturally pinned to bottom */}
       <div
         onClick={scrollToNext}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer z-50 group px-4 py-2"
+        className="flex justify-center cursor-pointer pb-8 z-50 group"
       >
         <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
           <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
