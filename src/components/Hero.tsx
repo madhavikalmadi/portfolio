@@ -80,7 +80,7 @@ const Hero = () => {
       {/* Scroll indicator — naturally pinned to bottom */}
       <div
         onClick={scrollToNext}
-        className="flex justify-center cursor-pointer pb-16 md:pb-24 z-50 group"
+        className="flex justify-center cursor-pointer pb-8 z-50 group"
       >
         <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
           <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
