@@ -23,18 +23,6 @@ const Hero = () => {
             Bengaluru • Open to Data Analyst Roles
           </div>
 
-          <div className="tech-stack flex justify-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base font-semibold text-primary mb-10">
-            <span>Python</span>
-            <span>•</span>
-            <span>SQL</span>
-            <span>•</span>
-            <span>Pandas</span>
-            <span>•</span>
-            <span>Machine Learning</span>
-            <span>•</span>
-            <span>Data Visualization</span>
-          </div>
-
           <p className="description text-lg md:text-xl text-gray-600 leading-relaxed max-w-[650px] mx-auto mb-12">
             I build data-driven applications and analytics dashboards
             using Python, SQL and financial data analysis.
