@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="hero relative min-h-[85vh] flex flex-col overflow-hidden">
       {/* Main content — centered in the flex column */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto w-full pt-8 md:pt-10">
-        <div className="-mt-24 md:-mt-40">
+        <div className="-mt-8 md:-mt-12">
           <h1 className="text-[48px] md:text-[52px] font-bold text-gray-800 leading-tight mb-8">
             Madhavi K
           </h1>
