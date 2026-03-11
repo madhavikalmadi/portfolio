@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="hero relative min-h-[85vh] flex flex-col overflow-hidden">
       {/* Main content — centered in the flex column */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto w-full pt-8 md:pt-10">
-        <div>
+        <div className="-mt-24 md:-mt-40">
           <h1 className="text-[48px] md:text-[52px] font-bold text-gray-800 leading-tight mb-8">
             Madhavi K
           </h1>
@@ -80,7 +80,7 @@ const Hero = () => {
       {/* Scroll indicator — naturally pinned to bottom */}
       <div
         onClick={scrollToNext}
-        className="flex justify-center cursor-pointer pb-8 z-50 group"
+        className="flex justify-center cursor-pointer pb-16 md:pb-24 z-50 group"
       >
         <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
           <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
