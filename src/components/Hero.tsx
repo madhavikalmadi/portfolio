@@ -65,17 +65,19 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator — moved back to bottom as requested */}
+      {/* Scroll indicator — reverted to "below buttons" position */}
       <div
         onClick={scrollToNext}
-        className="flex justify-center cursor-pointer pb-8 z-50 group"
+        className="flex justify-center cursor-pointer mt-20 z-50 group"
       >
         <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
           <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
           <ChevronDown className="h-6 w-6 animate-bounce" />
         </div>
       </div>
-    </section>
+    </div>
+      </div >
+    </section >
   );
 };
 
