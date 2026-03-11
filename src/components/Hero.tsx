@@ -23,6 +23,18 @@ const Hero = () => {
             Bengaluru • Open to Data Analyst Roles
           </div>
 
+          <div className="tech-stack flex justify-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base font-semibold text-primary mb-10">
+            <span>Python</span>
+            <span>•</span>
+            <span>SQL</span>
+            <span>•</span>
+            <span>Pandas</span>
+            <span>•</span>
+            <span>Machine Learning</span>
+            <span>•</span>
+            <span>Data Visualization</span>
+          </div>
+
           <p className="description text-lg md:text-xl text-gray-600 leading-relaxed max-w-[650px] mx-auto mb-12">
             I build data-driven applications and analytics dashboards
             using Python, SQL and financial data analysis.
@@ -62,22 +74,20 @@ const Hero = () => {
               </a>
             </Button>
           </div>
-        </div>
-      </div>
 
-      {/* Scroll indicator — reverted to "below buttons" position */}
-      <div
-        onClick={scrollToNext}
-        className="flex justify-center cursor-pointer mt-20 z-50 group"
-      >
-        <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
-          <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
-          <ChevronDown className="h-6 w-6 animate-bounce" />
+          {/* Scroll indicator — reverted to "below buttons" position */}
+          <div
+            onClick={scrollToNext}
+            className="flex justify-center cursor-pointer mt-20 z-50 group"
+          >
+            <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
+              <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
+              <ChevronDown className="h-6 w-6 animate-bounce" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-      </div >
-    </section >
+    </section>
   );
 };
 
