@@ -1,12 +1,6 @@
-import { ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
-  const scrollToNext = () => {
-    const nextSection = document.getElementById('about');
-    nextSection?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="hero relative min-h-[85vh] flex flex-col overflow-hidden">
       {/* Main content — centered in the flex column */}
@@ -61,17 +55,6 @@ const Hero = () => {
                 Contact
               </a>
             </Button>
-          </div>
-
-          {/* Scroll indicator — reverted to "below buttons" position */}
-          <div
-            onClick={scrollToNext}
-            className="flex justify-center cursor-pointer mt-20 z-50 group"
-          >
-            <div className="flex flex-col items-center text-gray-600 group-hover:text-primary transition-colors duration-300">
-              <span className="text-xs font-semibold tracking-widest mb-2 uppercase opacity-80">Scroll</span>
-              <ChevronDown className="h-6 w-6 animate-bounce" />
-            </div>
           </div>
         </div>
       </div>
